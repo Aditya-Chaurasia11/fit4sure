@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=My+Soul&display=swap");
+body {
+  background-color: #daecf4;
+  position: relative;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.login_container_card {
+  z-index: -1;
+  /* background-color: #DAECF4; */
+  color: #010703;
+  width: 400px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.login_container_card *{
+    width: 100%;
+}
+.login_container_card .login_container_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+.login_container {
+  display: flex;
+  align-items: center;
+
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 2%;
+}
+.login_container_card h1,.signup_link {
+  text-align: center;
+}
+
+.login_container_card .forgot_pass {
+  text-align: end;
+}
+.login_upper_container {
+  height: 80vh;
+}
+/* .login_container h1 {
+  font-family: "My Soul";
+  font-size: 120px;
+  color: #010703;
+  font-weight: 400;
+} */
+.home_container_subHeading {
+  color: #010703;
+  font-size: 90px;
+  font-family: "DM Sans", sans-serif;
+}
+.home_container_label {
+  margin-top: 45px;
+  color: #555555;
+  font-size: 20px;
+  font-weight: 400;
+  width: 50%;
+}
+
+.home_container_button {
+  padding: 1rem 1.5rem;
+  color: #fff;
+  /* background: #FF5C52; */
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 45px;
+}
+.home_container_svg svg {
+  z-index: -2;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
+.home_container_main_img {
+  z-index: 0;
+  width: 900px;
+  position: absolute;
+  top: -1%;
+  right: 0%;
+}
