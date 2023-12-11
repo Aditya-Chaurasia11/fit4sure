@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=My+Soul&display=swap");
+body {
+  background-color: #daecf4;
+  position: relative;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.signup_container_card {
+  z-index: 100;
+  /* background-color: #DAECF4; */
+  color: #010703;
+  width: 609px;
+  display: flex;
+  height: 500px;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px 50px;
+  background-color: #e6f4fa;
+  border-radius: 13px;
+  border: 1px solid #d4d4d4;
+}
+.signup_container_card * {
+  width: 100%;
+}
+.signup_container_card span {
+  font-family: "My Soul";
+  font-weight: 400;
+  font-size: 38px;
+}
+.signup_container_card input {
+  background-color: #daecf4;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #daecf4;
+  margin-bottom: 18px;
+}
+
+.signup_container_card input:focus {
+  background-color: #daecf4;
+}
+.signup_container_card .signup_container_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  /* flex-wrap: wrap; */
+}
+.signup_container_button {
+  display: flex;
+  height: max-content;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signup_container {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 2%;
+}
+.signup_container_card h1,
+.signup_link {
+  text-align: center;
+  /* width: fit-content; */
+}
+.signup_container_card h1 {
+  font-size: 28px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+.signup_container_card_input label {
+  font-size: 16px;
+}
+.signup_container_card .forgot_pass {
+  text-align: end;
+  font-size: 12px;
+}
+.signup_upper_container {
+  height: 80vh;
+}
+.first_button {
+  border: none;
+  width: 45%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+}
+.second_button {
+  cursor: pointer;
+  width: 45%;
+  border-radius: 5px;
+  background: transparent;
+  padding: 10px 15px;
+  border: 1px solid gray;
+}
+
+/* .login_container h1 {
+  font-family: "My Soul";
+  font-size: 120px;
+  color: #010703;
+  font-weight: 400;
+} */
+.home_container_subHeading {
+  color: #010703;
+  font-size: 90px;
+  font-family: "DM Sans", sans-serif;
+}
+.home_container_label {
+  margin-top: 45px;
+  color: #555555;
+  font-size: 20px;
+  font-weight: 400;
+  width: 50%;
+}
+
+.home_container_button {
+  padding: 1rem 1.5rem;
+  color: #fff;
+  /* background: #FF5C52; */
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 45px;
+}
+.home_container_svg svg {
+  z-index: -2;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
+.home_container_main_img {
+  z-index: 0;
+  width: 900px;
+  position: absolute;
+  top: -1%;
+  right: 0%;
+}

@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=My+Soul&display=swap");
+body {
+  background-color: #daecf4;
+  position: relative;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.career_container_card {
+  z-index: 100;
+  /* background-color: #DAECF4; */
+  color: #010703;
+  width: 609px;
+  display: flex;
+  height: 530px;
+  overflow-y: scroll;
+  align-items: start;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  padding: 30px 50px;
+  background-color: #e6f4fa;
+  border-radius: 13px;
+  border: 1px solid #d4d4d4;
+}
+.career_container_card::-webkit-scrollbar {
+  width: 8px; /* Adjust the scrollbar width as needed */
+}
+
+.career_container_card::-webkit-scrollbar-thumb {
+  background-color: #DAECF4; /* Change the color as desired */
+}
+
+.career_container_card * {
+  width: 100%;
+}
+.career_container_card span {
+  font-family: "My Soul";
+  font-weight: 400;
+  font-size: 38px;
+}
+.career_container_card input,
+select {
+  background-color: #daecf4;
+  border: none;
+  outline: none;
+  height: 36px;
+  border-radius: 5px;
+  border: 1px solid #daecf4;
+  margin-bottom: 18px;
+}
+.career_container_card input{
+    width: 60%;
+}
+.career_container_card select{
+    width: 40%;
+}
+.career_container_input {
+  display: flex;
+  margin-top: 18px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.career_container_card_cardComp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 22px;
+}
+.career_container_card_cardComp_div {
+  display: flex;
+  padding: 30px 10px;
+  align-items: center;
+  justify-content: center;
+  background-color:#DAECF4;
+  border-radius: 8px;
+}
+.career_container_card_cardComp_div button {
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+  width: 118px;
+  height: 36px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.career_middle {
+  text-align: center;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+.career_container_card input:focus {
+  background-color: #daecf4;
+}
+.career_container_card .career_container_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  margin-top: 30px;
+}
+.career_container {
+  display: flex;
+  align-items: center;
+  height: 90%;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 2%;
+}
+.career_container_card h1,
+.signup_link {
+  text-align: center;
+}
+.career_container_card h1 {
+  font-size: 28px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+.career_container_card_input label {
+  font-size: 16px;
+}
+/* .career_container_card .forgot_pass {
+  text-align: end;
+  font-size: 12px;
+} */
+.career_upper_container {
+  height: 85vh;
+}
+/* .first_button {
+  border: none;
+  width: 45%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+}
+.second_button {
+  cursor: pointer;
+  width: 45%;
+  border-radius: 5px;
+  background: transparent;
+  padding: 10px 15px;
+  border: 1px solid gray;
+} */
+
+/* .career_container h1 {
+  font-family: "My Soul";
+  font-size: 120px;
+  color: #010703;
+  font-weight: 400;
+} */
+
+.home_container_subHeading {
+  color: #010703;
+  font-size: 90px;
+  font-family: "DM Sans", sans-serif;
+}
+.home_container_label {
+  margin-top: 45px;
+  color: #555555;
+  font-size: 20px;
+  font-weight: 400;
+  width: 50%;
+}
+
+.home_container_button {
+  padding: 1rem 1.5rem;
+  color: #fff;
+  /* background: #FF5C52; */
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 45px;
+}
+.home_container_svg svg {
+  z-index: -2;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
+.home_container_main_img {
+  z-index: 0;
+  width: 900px;
+  position: absolute;
+  top: -1%;
+  right: 0%;
+}

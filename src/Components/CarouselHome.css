@@ -1,0 +1,28 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .slide-container {
+    overflow: hidden;
+    width: 60%;
+    position: relative;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  button {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  

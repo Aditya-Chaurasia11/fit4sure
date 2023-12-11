@@ -1,0 +1,11 @@
+.card_container_trainer {
+  width: 250px;
+  height: 140px;
+  background: linear-gradient(119.15deg, #2e374b -13.54%, #292f3c 118.09%);
+  border-radius: 10px;
+  padding: 7%;
+}
+
+.card_forslideractive {
+  background: linear-gradient(119.15deg, #0d8a7c -13.54%, #0d568a 118.09%);
+}

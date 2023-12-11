@@ -1,0 +1,145 @@
+.meetexperts_container_upper_right img {
+  width: 297px;
+  height: 350px;
+  border-radius: 16px;
+}
+.meetexperts_container {
+  padding: 5%;
+  background: rgba(216, 250, 255, 1);
+}
+
+.meetexperts_container_upper_left_upper_h1 {
+  font-size: 92px;
+  font-family: "My Soul";
+  font-weight: 400;
+  color: rgba(75, 148, 159, 1);
+}
+
+.meetexperts_container_upper_left_upper_p {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 59px;
+  color: rgba(75, 148, 159, 1);
+}
+.meetexperts_container_upper_left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.meetexperts_container_upper_left button {
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+  outline: none;
+  border: none;
+  width: 220px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.meetexperts_container_upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.meetexperts_container_upper_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.meetexperts_div_full {
+  display: flex;
+  width: 297px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 15px;
+  background: rgba(162, 222, 231, 1);
+  border-radius: 16px;
+  border: 1px solid rgba(162, 222, 231, 1);
+  margin-top: 20px;
+}
+.meetexperts_div_full h1 {
+  font-size: 16px;
+}
+.meetexperts_div_full p {
+  font-size: 10px;
+}
+
+.meetexperts_div_empty {
+  height: 100px;
+  /* width: ; */
+}
+
+.health_comp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.meetexperts_container_lower {
+  margin-top: 50px;
+}
+.meetexperts_container_lower h2 {
+  text-align: center;
+  font-size: 40px;
+  color: rgba(75, 148, 159, 1);
+}
+
+.meetexperts_container_lower_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 45%;
+  border-radius: 16px;
+  background: rgba(162, 222, 231, 1);
+  padding: 5px;
+}
+
+.navbar_contianer_nav {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meetexperts_content {
+  margin-top: 50px;
+}
+
+.meet_active {
+  background: rgba(75, 148, 159, 1);
+  color: white;
+}
+
+.meetexperts_sel_div {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.meetexperts_bottom_button {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+
+.meetexperts_bottom_button button {
+  width: 180px;
+  height: 35px;
+  border: none;
+  color: white;
+  outline: none;
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+  cursor: pointer;
+  border-radius: 10px;
+}

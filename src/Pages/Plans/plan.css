@@ -1,0 +1,50 @@
+.plan_container {
+  padding-left: 6%;
+  padding-right: 6%;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../images//front-view-man-tank-top-holding-weights-with-copy-space.jpg");
+}
+.plan_container_tab h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+}
+.plan_container_tab span {
+  font-size: 42px;
+  font-family: "My Soul";
+}
+.plan_container_tab {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.plan_container_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.plan_container_button button {
+  width: 180px;
+  height: 35px;
+  border: none;
+  outline: none;
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+  cursor: pointer;
+  border-radius: 10px;
+  width: 180px;
+  height: 35px;
+  border: none;
+  outline: none;
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+}

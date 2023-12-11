@@ -21,16 +21,18 @@ const Navbar = () => {
             <NavLink to="/services">Services</NavLink>
           </p>
           <p>
-            <NavLink to="/carrers">Carrers</NavLink>
+            <NavLink to="/career">Careers</NavLink>
           </p>
           <p>
             <NavLink to="/contact">Contact Us</NavLink>
           </p>
         </div>
       </div>
-      <div className="gpt3__navbar-sign">
-        <button type="button">Sign up</button>
-      </div>
+      <NavLink to="/signup">
+        <div className="gpt3__navbar-sign">
+          <button type="button">Signup</button>
+        </div>
+      </NavLink>
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
           <RiCloseLine
@@ -55,14 +57,16 @@ const Navbar = () => {
                 <NavLink to="/services">Services</NavLink>
               </p>
               <p>
-                <NavLink to="/carrers">Carrers</NavLink>
+                <NavLink to="/career">Carrers</NavLink>
               </p>
               <p>
                 <NavLink to="/contact">Contact Us</NavLink>
               </p>
             </div>
             <div className="gpt3__navbar-menu_container-links-sign">
-              <button type="button">Sign up</button>
+              <NavLink to="/signup">
+                <button type="button">Signup</button>
+              </NavLink>
             </div>
           </div>
         )}

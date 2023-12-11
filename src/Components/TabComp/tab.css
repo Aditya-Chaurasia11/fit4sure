@@ -1,0 +1,75 @@
+.vertical-tabs {
+  display: flex;
+}
+
+.tab-list {
+  width: 50%;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.tab {
+  padding: 10px;
+  cursor: pointer;
+  /* border: 1px solid #ccc; */
+  margin-bottom: 10px;
+  background: linear-gradient(0deg, #d4e9fb, #d4e9fb),
+    linear-gradient(0deg, #dfdddd, #dfdddd);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 60px;
+}
+
+.tab.active {
+  background: linear-gradient(98.22deg, #ff72b2 0%, #fffcfd 100%),
+    linear-gradient(
+      -81.38deg,
+      rgba(255, 0, 118, 0.6) 2.6%,
+      rgba(255, 57, 148, 0.6) 81.38%,
+      rgba(255, 255, 255, 0.6) 100%
+    );
+  background-size: 100% 100%, 100% 100%;
+  background-position: 0 0, 0 0;
+  animation: background-rotate 4s linear infinite;
+}
+@keyframes background-rotate {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 0 100%, 0 100%;
+  }
+}
+
+.tab-content {
+  flex: 1;
+  padding: 10px;
+}
+
+.tab-pane {
+  display: none;
+  border-radius: 10px;
+  padding: 10px;
+  height: 100%;
+}
+
+.tab-pane.plane_active {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 98%;
+}
+
+.tab-pane_header {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.tab-pane_header p {
+  border: 1px solid gray;
+  padding: 7px;
+  border-radius: 20px;
+}

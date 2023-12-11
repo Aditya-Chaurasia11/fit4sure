@@ -1,0 +1,85 @@
+.trainer_home_container_outer {
+  background-color: rgb(34, 38, 47);
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white;
+  height: 100vh;
+}
+.trainer_home_container_header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.trainer_home_container_right {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainer_home_container_body_left{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.trainer_home_container_right div {
+  background: linear-gradient(93.58deg, #363e52 -2%, #2b3242 117.56%);
+  padding: 19.42px, 17.48px, 19.42px, 17.48px;
+  width: 200px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+}
+.trainer_home_container_right input {
+  background-color: rgba(46, 49, 65, 1);
+  outline: none;
+  border: none;
+  width: 280px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  padding-left: 5px;
+}
+
+.trainer_home_container_body {
+  margin-top: 30px;
+  height: 329px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 2.8%;
+  border-radius: 10px;
+  background: linear-gradient(0deg, #29303F, #29303F),
+linear-gradient(0deg, rgba(50, 59, 79, 0.4), rgba(50, 59, 79, 0.4));
+
+}
+
+.trainer_home_container_body_right img {
+  height: 263px;
+  border-radius: 10px;
+  width: 365px;
+}
+
+.trainer_home_container_body_left span{
+  font-family: "My Soul";
+font-size: 40px;
+font-weight: 400;
+}
+.trainer_home_container_body_left_button button{
+    padding: 19.42px, 17.48px, 19.42px, 17.48px;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(93.58deg, #363E52 -2%, #2B3242 117.56%);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-right: 30px;
+    color: white;
+}

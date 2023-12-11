@@ -1,22 +1,144 @@
-import React from "react";
+import React, { useState } from "react";
 import "./login.css";
 import mainImg from "../images/young-woman-stretching-before-workout 3.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const [phone, setPhone] = useState("");
+  const [otp, setOTP] = useState("");
+  const [selectedOption, setSelectedOption] = useState("yes");
+
+  const handleLogin = async () => {
+    const data = {
+      contactNumber: phone,
+      otp: otp,
+    };
+    try {
+      const res = await axios.post(
+        `https://fit4sure.onrender.com/app/user/login`,
+        data
+      );
+      localStorage.setItem("token", res.data.token);
+      console.log(res.data.token);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const handleTrainerLogin = async () => {
+    const data = {
+      phone: phone,
+      otp: otp,
+    };
+    try {
+      const res = await axios.post(
+        `https://fit4sure.onrender.com/admin/trainer/trainerlogin`,
+        data
+      );
+      localStorage.setItem("trainer_token", res.data.token);
+      navigate("/trainer/home");
+      console.log(res.data.token);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const handleOptionChange = (value) => {
+    setSelectedOption(value);
+  };
+
+  const handleOTP = async () => {
+    const phoneNum = {
+      phone: phone,
+    };
+    try {
+      const res = await axios.post(
+        `https://fit4sure.onrender.com/app/user/genOTP`,
+        phoneNum
+      );
+      console.log(res.data.success);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const handleTrainerOTP = async () => {
+    const phoneNum = {
+      phone: phone,
+    };
+    try {
+      const res = await axios.post(
+        `https://fit4sure.onrender.com/admin/trainer/genOTP`,
+        phoneNum
+      );
+      console.log(res.data.success);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="login_upper_container">
       <div className="login_container">
         <div className="login_container_card">
-          <h1>Let's restart</h1>
-          <label>Email ID</label>
-          <input type="email"></input>
-          <label>Password</label>
-          <input type="password"></input>
-          <p className="forgot_pass">Forgot Password?</p>
-          <div className="login_container_button">
-            <button>Sign In</button>
-            <button>Sign in with Google</button>
+          <h1>
+            Let's <span>restart</span>
+          </h1>
+          <div className="login_container_card_input">
+            <label>Phone number</label>
+            <input
+              type="phone"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+            ></input>
+            <label>One-Time Password (OTP)</label>
+            <input
+              type="otp"
+              value={otp}
+              onChange={(e) => setOTP(e.target.value)}
+            ></input>
+            {/* <p className="forgot_pass">Forgot Password?</p> */}
+          </div>
+          <div className="login_toggle-radio">
+            <div
+              className={`toggle-option ${
+                selectedOption === "yes" ? "login_active" : ""
+              }`}
+              onClick={() => handleOptionChange("yes")}
+            >
+              User
+            </div>
+            <div
+              className={`toggle-option ${
+                selectedOption === "no" ? "login_active" : ""
+              }`}
+              onClick={() => handleOptionChange("no")}
+            >
+              Trainer
+            </div>
+          </div>
+          <div>
+            <div className="login_container_button">
+              <button
+                className="first_button"
+                onClick={
+                  selectedOption === "yes" ? handleLogin : handleTrainerLogin
+                }
+              >
+                Sign In
+              </button>
+              <button
+                className="second_button"
+                onClick={
+                  selectedOption === "yes" ? handleOTP : handleTrainerOTP
+                }
+              >
+                Send OTP
+              </button>
+            </div>
           </div>
           <p className="signup_link">
             Don't have account? <Link to="/signup"> Sign up</Link>

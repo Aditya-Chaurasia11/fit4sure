@@ -17,9 +17,9 @@ body {
   color: #010703;
 }
 .home_container_upperSection {
-  height: 80vh;
+  height: 90vh;
 }
-.home_container h1 {
+.home_container span {
   font-family: "My Soul";
   font-size: 120px;
   color: #010703;
@@ -38,6 +38,13 @@ body {
   width: 50%;
 }
 
+.home_container_button_container {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .home_container_button {
   padding: 1rem 1.5rem;
   color: #fff;
@@ -52,28 +59,107 @@ body {
   border-radius: 12px;
   margin-top: 45px;
 }
-.home_container_svg svg {
+.home_container_button_second {
+  padding: 1rem 1.5rem;
+  color: #ff5f55;
+
+  background-color: transparent;
+  border: 2px solid #ff5f55;
+
+  /* border-image-source: linear-gradient(
+    90deg,
+    #ff5f55 0%,
+    #f38d89 26.7%,
+    #eda2a1 39.09%,
+    #e6bdbf 63.45%,
+    #daecf4 85.02%
+  ); */
+
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  /* border: none; */
+  /* outline: none; */
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 45px;
+}
+
+.home_container_button_third{
+  padding: .6rem 1.5rem;
+  color: #ff5f55;
+
+  background-color: transparent;
+  border: 1px solid #ff5f55;
+
+  
+
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  /* border: none; */
+  /* outline: none; */
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 45px;
+}
+
+.modal-body .video_section {
+  width: 100%;
+}
+
+.home_container_upperSection .home_container_svg svg {
   z-index: -2;
   width: 100%;
   position: absolute;
-  top: 15%;
+  top: 8%;
+  /* border: 1px solid red; */
 }
-.home_container_main_img {
+.home_container_upperSection .home_container_main_img {
   z-index: 0;
   width: 900px;
   position: absolute;
-  top: -1%;
-  right: 0%;
+  top: 0.5%;
+  right: 1%;
 }
+.home_container_upperSection .home_container_video_section {
+  width: 180px;
+  height: 180px;
+  cursor: pointer;
+  position: absolute;
+  top: 8%;
+  right: 3%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../images/Frame 10.png");
+  /* top: 607px; */
+  /* left: 1272px;; */
+  /* padding: 63px, 33px, 39px, 34px; */
+  border-radius: 56px;
+  background-size: cover;
+}
+
+.home_container_upperSection .home_container_video_section h1 {
+  font-family: "My Soul";
+  font-size: 60px;
+}
+
 .video_section {
   width: 100%;
+  height: 500px;
   /* height: 100%; */
+
+  margin-top: 132px;
 }
+
 .how_works {
   padding-left: 6%;
   padding-right: 6%;
-  padding-top: 6%;
-  padding-bottom: 6%;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
   background-color: #fffdf0;
 }
 .how_works_middle_comp {
@@ -81,7 +167,12 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 500px;
-  margin: 50px;
+  margin: 30px;
+}
+.how_works_middle :hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: transform 0.4s;
 }
 
 .how_works_middle {
@@ -210,27 +301,35 @@ body {
 
 .hear_from_coach {
   width: 100%;
-  height: 300px;
-  background-color: #f8ebff;
+  height: 200px;
   position: relative;
   overflow-x: hidden;
 }
 
+.hear_from_coach_outer {
+  background-color: #f8ebff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 33px;
+}
 .moving-div {
   display: flex;
   position: absolute;
-  width: inherit;
-  height: inherit;
+  /* width: inherit;
+  height: inherit; */
   /* position: absolute; */
   left: 0%;
   top: 0%;
   /* gap: 50px; */
 }
 .primary {
-  animation: primary 5s linear infinite;
+  animation: primary 10s linear infinite;
 }
 .secondary {
-  animation: secondary 5s linear infinite;
+  animation: secondary 10s linear infinite;
 }
 
 @keyframes primary {
@@ -245,6 +344,113 @@ body {
 @keyframes secondary {
   from {
     left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+.meet_container_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  flex-direction: column;
+}
+
+.meet_container_left img {
+  height: 128px;
+  width: 128px;
+}
+
+.meet_container_left_upper,
+.meet_container_left_bottom,
+.meet_container_left_middle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.meet_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.meet_container_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 20px;
+}
+
+.meet_container_right_upper h1 {
+  font-size: 92px;
+  font-weight: 400;
+  font-family: "My Soul";
+  color: rgba(75, 148, 159, 1);
+}
+
+.meet_container_right_upper p {
+  font-size: 43px;
+  font-weight: 500;
+  color: rgba(75, 148, 159, 1);
+}
+.img_container_img {
+  width: 163px;
+  height: 180px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.img_container_img p {
+  color: rgba(75, 148, 159, 1);
+}
+
+.meet_container_right_upper button {
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+  outline: none;
+  border: none;
+  width: 220px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.moving-div-bottom {
+  display: flex;
+  position: absolute;
+  /* width: inherit; */
+  /* height: inherit; */
+  /* position: absolute; */
+  left: 0%;
+  top: 0%;
+  /* gap: 50px; */
+}
+.primary-bottom {
+  animation: primaryb 10s linear infinite;
+}
+.secondary-bottom {
+  animation: secondaryb 10s linear infinite;
+}
+
+@keyframes primaryb {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes secondaryb {
+  from {
+    left: -100%;
   }
   to {
     left: 0%;
@@ -270,10 +476,11 @@ body {
 }
 .moving-div_comp {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   gap: 28px;
-  /* margin-left: 50px; */
-  
+  margin-left: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .moving-div_comp_text_button {
@@ -297,3 +504,359 @@ body {
   border-radius: 5px;
   color: white;
 }
+.hear_from_coach_button {
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+  outline: none;
+  border: none;
+  width: 220px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 22px;
+}
+
+.trust_by img {
+  width: 100%;
+  height: 600px;
+
+  /* position: relative; */
+  /* color: #F8EBFF; */
+  /* background-color: black Semi-transparent black overlay */
+}
+
+.trust_by {
+  position: relative;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+
+  /* Adjust values for the desired color effect */
+}
+.trust_by_text {
+  position: absolute;
+  top: 50%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  color: #ffffff;
+  height: 85%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.trust_by_text h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 85px;
+  font-weight: 500;
+}
+.trust_by_text span {
+  font-family: "My Soul";
+  font-weight: 400;
+}
+
+.trust_by_text_p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 60px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trust_by_text_button button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 500;
+}
+
+.slider_container {
+  height: 700px;
+  padding-top: 100px;
+  background-color: #f2ffd7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slider_container_upper {
+  /* border: 1px solid red; */
+  /* width: px; */
+  background-color: rgba(219, 231, 194, 1);
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.slider_container_upper_upper {
+  display: flex;
+  padding-top: 200px;
+  align-items: center;
+}
+.slider_container_left {
+  width: 58px;
+  height: 289px;
+  background-color: rgba(219, 231, 194, 1);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.slider_container_right {
+  width: 58px;
+  height: 289px;
+  background-color: rgba(219, 231, 194, 1);
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.08);
+}
+
+.start_now img {
+  width: 100%;
+  height: 600px;
+  /* position: relative; */
+  /* color: #F8EBFF; */
+}
+
+.start_now {
+  position: relative;
+}
+
+.start_now_text {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  /* transform: translate(-50%, -50%); */
+  padding: 10px;
+  color: #ffffff;
+  height: 85%;
+  float: left;
+}
+
+.start_now_text h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 85px;
+  font-weight: 500;
+}
+.start_now_text span {
+  font-family: "My Soul";
+  font-weight: 400;
+  font-size: 120px;
+}
+
+.slider_container_right_com {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slider_container_right_com_upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: ; */
+}
+.slider_container_right_com_upper_left {
+  width: 50%;
+}
+
+.slider_container_right_com_upper_right {
+  width: 40%;
+}
+
+.slider_container_right_com_lower {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: ; */
+}
+.slider_container_right_com_lower_left {
+  width: 50%;
+}
+
+.slider_container_right_com_lower_right {
+  width: 40%;
+}
+
+.slider_container_right_com_upper_right h1 {
+  font-size: 200px;
+  font-family: "My Soul";
+}
+
+.slider_container_right_com_lower_right h1 {
+  font-size: 200px;
+  font-family: "My Soul";
+}
+
+.slider_container_right_com_upper_left h1 {
+  font-size: 30px;
+  text-align: end;
+}
+.slider_container_right_com_upper_left hr,
+.slider_container_right_com_lower_left hr {
+  border: 1px solid red;
+}
+.slider_container_right_com_lower_left h1 {
+  font-size: 30px;
+  text-align: end;
+}
+
+.slider_container_right_com_upper_left p {
+  font-size: 16px;
+  text-align: end;
+}
+.slider_container_right_com_lower_left p {
+  font-size: 16px;
+  text-align: end;
+}
+
+.footer_home {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 6%;
+  padding-right: 6%;
+
+  background: rgba(36, 36, 36, 1);
+}
+
+.footer_home h1 {
+  color: white;
+}
+
+.footer_upper {
+  display: flex;
+  gap: 20px;
+}
+.footer_lower button {
+  background: rgba(126, 125, 125, 1);
+  width: 187px;
+  height: 54px;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.big_changes_container {
+  background: rgba(255, 228, 228, 1);
+  padding-top: 4%;
+  padding-left: 3%;
+  padding-right: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.big_changes_container_left {
+  display: flex;
+  
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
+}
+.big_changes_container_left_upper h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 61px;
+}
+
+.big_changes_container_left_upper h2 {
+  font-size: 90px;
+  font-weight: 500;
+  font-family: "My Soul";
+
+  line-height: 61px;
+}
+
+.image-with-blur {
+  height: 400px;
+  width: 600px;
+  border-radius: 20px 20px 0 0;
+}
+
+.big_changes_img_container {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  justify-content: center;
+}
+
+.big_changes_container_right {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  width: 40%;
+}
+
+.big_changes_container_right input,
+.div_big_changes {
+  width: 100%;
+}
+
+.big_changes_container_right input {
+  outline: none;
+  background: rgba(255, 246, 246, 1);
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.big_changes_temp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select_comp_home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.select_comp_home_big select {
+  width: 100%;
+  background: rgba(255, 246, 246, 1);
+  outline: none;
+  border: none;
+  height: 35px;
+}
+
+.big_changes_container_right button {
+  padding: 5px 70px;
+  color: #fff;
+ 
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button_comp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 

@@ -1,0 +1,174 @@
+.trainer_dashboard_container_outer {
+  background-color: rgb(34, 38, 47);
+  padding-left: 50px;
+  padding-right: 50px;
+
+  color: white;
+  height: 100vh;
+}
+.trainer_dashboard_container_header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.trainer_dashboard_container_right {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trainer_dashboard_container_body_left {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.trainer_dashboard_container_right div {
+  background: linear-gradient(93.58deg, #363e52 -2%, #2b3242 117.56%);
+  padding: 19.42px, 17.48px, 19.42px, 17.48px;
+  width: 200px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+}
+.trainer_dashboard_container_right input {
+  background-color: rgba(46, 49, 65, 1);
+  outline: none;
+  border: none;
+  width: 280px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  padding-left: 5px;
+}
+
+.trainer_dashboard_container_body {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trainer_dashboard_container_body_first,
+.trainer_dashboard_container_body_second,
+.trainer_dashboard_container_body_third {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 312px;
+  height: 104px;
+  background: linear-gradient(119.15deg, #2e374b -13.54%, #292f3c 118.09%);
+  border-radius: 10px;
+}
+.trainer_dashboard_container_body_second {
+  background: linear-gradient(119.15deg, #0d8a7c -13.54%, #0d568a 118.09%);
+}
+.trainer_dashboard_container_body_right img {
+  height: 263px;
+  border-radius: 10px;
+  width: 365px;
+}
+
+.trainer_dashboard_container_body_left span {
+  font-family: "My Soul";
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.trainer_dashboard_container_footer {
+  padding: 25px 30px;
+  border-radius: 10px;
+  margin-top: 30px;
+  height: 340px;
+  background: linear-gradient(0deg, #29303f, #29303f),
+    linear-gradient(0deg, rgba(50, 59, 79, 0.4), rgba(50, 59, 79, 0.4));
+  border: 1px solid rgba(41, 48, 63, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trainer_dashboard_container_footer_left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.trainer_dashboard_container_footer_right img {
+  width: 365px;
+  height: 263px;
+  border-radius: 12px;
+}
+.trainer_dashboard_container_footer_left_third{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.trainer_dashboard_container_footer_left_third button{
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 8.74046516418457px 9.711627960205078px 18.45209312438965px 0px rgba(61, 73, 100, 0.3) inset;
+    color: white;
+    background: linear-gradient(93.58deg, #363E52 -2%, #2B3242 117.56%);
+
+}
+
+.trainer_dashboard_container_footer::-webkit-scrollbar {
+  width: 8px; /* Adjust the scrollbar width as needed */
+}
+
+.trainer_dashboard_container_footer::-webkit-scrollbar-thumb {
+  background-color: white; /* Change the color as desired */
+  border-radius: 5px;
+}
+
+.trainer_dashboard_container_footer_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trainer_dashboard_container_footer_header button {
+  padding: 19.42px, 17.48px, 19.42px, 17.48px;
+  width: 150px;
+  height: 50px;
+  background: rgba(13, 138, 124, 1);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.centered-table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+.centered-table th,
+.centered-table td {
+  text-align: center;
+  padding: 8px;
+  /* border-right: 1px solid #ddd;
+      margin-bottom: 2px; */
+}
+
+.centered-table th {
+  background-color: #f2f2f2;
+}
+
+.centered-table_img {
+  height: 47px;
+  width: 65px;
+  border-radius: 12px;
+}

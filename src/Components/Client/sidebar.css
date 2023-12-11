@@ -1,0 +1,91 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 275px;
+    background-color: rgba(41, 48, 63, 1);
+    color: white;
+  }
+  
+  .sidebar__logo {
+    display: grid;
+    place-items: center;
+    height: 120px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 316px;
+    padding: 1.2rem 1.8rem;
+  
+    font-family: "Mochiy Pop P one", sans-serif;
+  }
+  
+  .sidebar__menu {
+    position: relative;
+  }
+  
+  .sidebar__menu__item {
+    display: flex;
+    align-items: center;
+    place-content: flex-start;
+    margin: 1rem 1.8rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    transition: color 0.3s ease-in-out;
+    height: 56px;
+    border-radius: 10px;
+  }
+  
+  .sidebar_active {
+    /* color: #fff; */
+    background: linear-gradient(93.71deg, #363E52 0%, #2B3242 100%);
+  
+  }
+  
+  .sidebar__menu__item__icon {
+    margin-right: 1rem;
+  }
+  
+  .sidebar__menu__item__icon i {
+    font-size: 1.75rem;
+  }
+  
+  .sidebar__indicator {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    background-color: #308efe;
+    z-index: -1;
+    transform: translateX(-50%);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .sidebar__logo img {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+  }
+  .sidebar__logo_div {
+    width: 316px;
+    height: 108px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(93.71deg, #363E52 0%, #2B3242 100%);
+  
+    border: 1px solid rgba(41, 48, 63, 1);
+  }
+  .activeOfSidebarLago {
+    background: linear-gradient(
+        96.66deg,
+        rgba(13, 138, 124, 0.4) 0%,
+        rgba(13, 86, 138, 0.4) 100%
+      ),
+      linear-gradient(0deg, #29303f, #29303f);
+  }
+  

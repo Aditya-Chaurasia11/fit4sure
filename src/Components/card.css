@@ -1,0 +1,23 @@
+.card_comp_cont img {
+  width: 297px;
+  height: 350px;
+  border-radius: 16px;
+}
+
+.card_comp_cont span {
+  font-size: 20px;
+  color: rgba(53, 116, 125, 1);
+}
+.card_comp_cont p {
+  font-size: 14px;
+  color: rgba(53, 116, 125, 1);
+}
+
+.card_comp_cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: max-content;
+  height: 430px;
+}

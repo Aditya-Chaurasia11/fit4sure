@@ -9,41 +9,93 @@ body {
   box-sizing: border-box;
 }
 .login_container_card {
-  z-index: -1;
+  z-index: 100;
   /* background-color: #DAECF4; */
   color: #010703;
-  width: 400px;
+  width: 609px;
   display: flex;
+  height: 450px;
   align-items: start;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 50px;
+  background-color: #e6f4fa;
+  border-radius: 13px;
+  border: 1px solid #d4d4d4;
 }
-.login_container_card *{
-    width: 100%;
+.login_container_card * {
+  width: 100%;
 }
-.login_container_card .login_container_button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* flex-wrap: wrap; */
+.login_container_card span {
+  font-family: "My Soul";
+  font-weight: 400;
+  font-size: 38px;
+}
+.login_container_card input {
+  background-color: #daecf4;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #daecf4;
+  margin-bottom: 18px;
+}
+
+.login_container_card input:focus {
+  background-color: #daecf4;
+}
+.login_container_card .login_container_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  margin-top: 30px;
 }
 .login_container {
   display: flex;
   align-items: center;
-
+  height: 80%;
   padding-left: 6%;
   padding-right: 6%;
   padding-top: 2%;
 }
-.login_container_card h1,.signup_link {
+.login_container_card h1,
+.signup_link {
   text-align: center;
 }
-
+.login_container_card h1 {
+  font-size: 28px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+.login_container_card_input label {
+  font-size: 16px;
+}
 .login_container_card .forgot_pass {
   text-align: end;
+  font-size: 12px;
 }
 .login_upper_container {
   height: 80vh;
 }
+.first_button {
+  border: none;
+  width: 45%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff5c52 -14.45%, #ff776e 100%);
+}
+.second_button {
+  cursor: pointer;
+  width: 45%;
+  border-radius: 5px;
+  background: transparent;
+  padding: 10px 15px;
+  border: 1px solid gray;
+}
+
 /* .login_container h1 {
   font-family: "My Soul";
   font-size: 120px;
@@ -89,4 +141,28 @@ body {
   position: absolute;
   top: -1%;
   right: 0%;
+}
+
+.login_toggle-radio {
+  width: 160px;
+  background: rgba(218, 236, 244, 1);
+  display: flex;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.toggle-option {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login_active {
+  border-radius: 8px;
+  background: rgba(255, 114, 105, 1);
 }
